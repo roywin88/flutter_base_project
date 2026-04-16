@@ -8,7 +8,7 @@ class AppRouteRedirect {
 
   /// will redirect to home if already logged in
   static String? needNoAuth(BuildContext context, GoRouterState state) {
-    // TODO :  change to actual implementation
+    // todo :  change to actual implementation
     if (alreadyLogin) {
       return "/home";
     }
@@ -18,7 +18,7 @@ class AppRouteRedirect {
 
   /// will redirect to auth/login if not logged in
   static String? needAuth(BuildContext context, GoRouterState state) {
-    // TODO :  change to actual implementation
+    // todo :  change to actual implementation
     if (!alreadyLogin) {
       return "/auth";
     }

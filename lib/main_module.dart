@@ -5,7 +5,6 @@ import 'package:base_project/core/network/http_client.dart';
 import 'package:base_project/core/network/service/network_service.dart';
 import 'package:base_project/core/utils/app_event/app_event_broadcaster.dart';
 import 'package:base_project/core/utils/app_utils.dart';
-import 'package:base_project/module/auth/auth_module.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/services.dart';
 
@@ -27,8 +26,5 @@ class MainModule {
 
     // app event
     di.registerSingleton(AppEventBroadcaster());
-
-    // module
-    AuthModule.init();
   }
 }
