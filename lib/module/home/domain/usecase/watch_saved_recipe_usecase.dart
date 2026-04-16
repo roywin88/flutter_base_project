@@ -6,7 +6,7 @@ class WatchSavedRecipeUsecase {
 
   WatchSavedRecipeUsecase(this.repo);
 
-  Stream<List<RecipeEntity>> call() {
-    return repo.watchSavedRecipes();
+  Stream<List<RecipeEntity>> call({int? limit}) {
+    return repo.watchSavedRecipe(limit);
   }
 }

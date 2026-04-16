@@ -8,5 +8,5 @@ abstract class HomeRepository {
   FutureResult<List<RecipeEntity>> searchRecipe(String keyword);
   FutureResult<bool> saveRecipe(RecipeEntity recipe);
   FutureResult<bool> unSaveRecipe(RecipeEntity recipe);
-  Stream<List<RecipeEntity>> watchSavedRecipes();
+  Stream<List<RecipeEntity>> watchSavedRecipe(int? limit);
 }

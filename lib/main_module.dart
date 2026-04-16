@@ -26,5 +26,8 @@ class MainModule {
 
     // app event
     di.registerSingleton(AppEventBroadcaster());
+
+    // module
+    await MainModule.init();
   }
 }
